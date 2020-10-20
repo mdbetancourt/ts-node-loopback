@@ -1,0 +1,60 @@
+{
+  "name": "ts-node-loopback",
+  "version": "0.0.1",
+  "description": "ts-node-loopback",
+  "keywords": [
+    "loopback-application",
+    "loopback"
+  ],
+  "main": "src/index.ts",
+  "engines": {
+    "node": ">=10.16",
+    "npm": "⚠️please-use-yarn⚠️",
+    "yarn": ">= 2.3.3"
+  },
+  "scripts": {
+    "eslint": "lb-eslint --report-unused-disable-directives .",
+    "eslint:fix": "yarn run eslint --fix",
+    "test": "lb-mocha --allow-console-logs",
+    "start": "ts-node --type-check ./src/index.ts",
+    "dev": "ts-node-dev  --respawn --exit-child --cls ./src/index.ts"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Michel Betancourt <michelbetancourt23@gmail.com>",
+  "license": "",
+  "files": [
+    "README.md",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
+  "dependencies": {
+    "@loopback/boot": "^3.0.2",
+    "@loopback/core": "^2.11.0",
+    "@loopback/repository": "^3.1.0",
+    "@loopback/rest": "^8.0.0",
+    "@loopback/rest-explorer": "^3.0.2",
+    "@loopback/service-proxy": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0",
+    "tslib": "^2.0.0"
+  },
+  "resolutions": {
+    "ts-node": "^9.0.0"
+  },
+  "devDependencies": {
+    "@loopback/build": "^6.2.5",
+    "@loopback/eslint-config": "^10.0.1",
+    "@loopback/testlab": "^3.2.7",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^10.17.37",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-eslint-plugin": "^2.3.0",
+    "eslint-plugin-mocha": "^8.0.0",
+    "source-map-support": "^0.5.19",
+    "typescript": "~4.0.3"
+  }
+}
