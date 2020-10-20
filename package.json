@@ -13,9 +13,10 @@
     "yarn": ">= 2.3.3"
   },
   "scripts": {
-    "eslint": "lb-eslint --report-unused-disable-directives .",
-    "eslint:fix": "yarn run eslint --fix",
+    "lint": "lb-eslint --report-unused-disable-directives .",
+    "lint:fix": "yarn run lint --fix",
     "test": "lb-mocha --allow-console-logs",
+    "test:watch": "yarn test --watch",
     "start": "ts-node --type-check ./src/index.ts",
     "dev": "ts-node-dev  --respawn --exit-child --cls ./src/index.ts"
   },
@@ -37,6 +38,7 @@
     "@loopback/rest": "^8.0.0",
     "@loopback/rest-explorer": "^3.0.2",
     "@loopback/service-proxy": "^3.0.2",
+    "@swc-node/register": "^1.0.0",
     "ts-node": "^9.0.0",
     "ts-node-dev": "^1.0.0",
     "tslib": "^2.0.0"

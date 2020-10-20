@@ -604,6 +604,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@node-rs/helper@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@node-rs/helper@npm:0.4.0"
+  dependencies:
+    tslib: ^2.0.1
+  checksum: f98033ed82c722c923aa78fa647f410bf3444634b12f9a870d00e4227c3f0a72fed9b9f2b70dd13b8f5fda5235b38f7b76e94508c6eb14237b109a75e864ad11
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.3":
   version: 2.1.3
   resolution: "@nodelib/fs.scandir@npm:2.1.3"
@@ -683,6 +692,84 @@ __metadata:
   version: 0.7.1
   resolution: "@sinonjs/text-encoding@npm:0.7.1"
   checksum: fbc2abff23dce7f8842a64c61a4183a9300b03b8b4f03dc2739c8172fd3e401ed8f28fb1c5aac85b3cc0935f69bdb9823dd864a2e22110626751ff855879a76a
+  languageName: node
+  linkType: hard
+
+"@swc-node/core@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@swc-node/core@npm:1.0.0"
+  dependencies:
+    "@swc/core": ^1.2.34
+  checksum: dc82942f77eec0171b8560fac676458e206551b9fefd10cba58c1c50e79f6ab6fdc1ef54557e7ec55bfe7bb01b01131d2daf3aa7df653fd1e4a991c819a0ec41
+  languageName: node
+  linkType: hard
+
+"@swc-node/register@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@swc-node/register@npm:1.0.0"
+  dependencies:
+    "@swc-node/core": ^1.0.0
+    "@swc-node/sourcemap-support": ^0.1.8
+    chalk: ^4.1.0
+    debug: ^4.2.0
+    pirates: ^4.0.1
+  checksum: 40f7bea5be4dbeaa10e30cf577d0679bbad09549c0f41a9bf8d32f587494a0f88c4d126b34fc497473446f576947523ba5535369a03165c3b8c9b65760544add
+  languageName: node
+  linkType: hard
+
+"@swc-node/sourcemap-support@npm:^0.1.8":
+  version: 0.1.8
+  resolution: "@swc-node/sourcemap-support@npm:0.1.8"
+  dependencies:
+    source-map-support: ^0.5.19
+  checksum: b65530868003f24a5756b1f883df390cc2e95fcdad5d5a84582febd4a8b24e935314bf3693d9fbf2bffd986c33f4f34e6c9aa48d75e7bbd491352f6f75018669
+  languageName: node
+  linkType: hard
+
+"@swc/core-darwin@npm:^1.2.36":
+  version: 1.2.36
+  resolution: "@swc/core-darwin@npm:1.2.36"
+  checksum: 0d256c4253cf91c8223f0fae6c0a3556879c03c08b7ba2f48ef030d35258a81fcd19701916fff6d88056c60f006fe3ab13dad6712e02bfcba188dc4f6140610e
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-musl@npm:^1.2.36":
+  version: 1.2.36
+  resolution: "@swc/core-linux-musl@npm:1.2.36"
+  checksum: 55c6584ea6f47e17cf2628bd64804b68fdb1ee05da413e56d7a81ea5b7337a81a3248ac23c0a10294db8690be8a840d6a2f93b19be4737f7d7d27d87c4c7c752
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux@npm:^1.2.36":
+  version: 1.2.36
+  resolution: "@swc/core-linux@npm:1.2.36"
+  checksum: 6bbc62351133116151821e1204f8d5f76aa857bad7aa0caebfe0cf62f133b3675c2bbae10a5fe66b534060e3485c044ab3cb8de9ef29628abd6deec642d34e27
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32@npm:^1.2.36":
+  version: 1.2.36
+  resolution: "@swc/core-win32@npm:1.2.36"
+  checksum: 5f971ecbb5bd76577496ab91f6a7a14df264f019ba90dd3db617c2e3fe4e53fc24415f34009ae6e7ee2f0e05912f1c61bb20f3cc42eed88d99ccd2c9bb1adac4
+  languageName: node
+  linkType: hard
+
+"@swc/core@npm:^1.2.34":
+  version: 1.2.36
+  resolution: "@swc/core@npm:1.2.36"
+  dependencies:
+    "@node-rs/helper": ^0.4.0
+    "@swc/core-darwin": ^1.2.36
+    "@swc/core-linux": ^1.2.36
+    "@swc/core-win32": ^1.2.36
+  dependenciesMeta:
+    "@swc/core-darwin":
+      optional: true
+    "@swc/core-linux":
+      optional: true
+    "@swc/core-win32":
+      optional: true
+  checksum: e849542a307a3c10878441790324e2062396568339ad9bfbb47f66df1797a5a1187b2b1aa57653daacda328bd0835b71f606b8adc77cf4b445201efe5df2b2e4
   languageName: node
   linkType: hard
 
@@ -1519,7 +1606,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0.0":
+"chalk@npm:^4.0.0, chalk@npm:^4.1.0":
   version: 4.1.0
   resolution: "chalk@npm:4.1.0"
   dependencies:
@@ -4136,6 +4223,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"node-modules-regexp@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "node-modules-regexp@npm:1.0.0"
+  checksum: 90f928a1dbc3c98d39b3d133f8c910e6bd8e45416f8e15151a31c41550cffe4e3022a39c38c20ae4ceca56b6e63741def4f3a2018080d13f5be245f4b060a9b1
+  languageName: node
+  linkType: hard
+
 "node-preload@npm:^0.2.1":
   version: 0.2.1
   resolution: "node-preload@npm:0.2.1"
@@ -4695,6 +4789,15 @@ fsevents@~2.1.2:
   version: 2.0.4
   resolution: "pinkie@npm:2.0.4"
   checksum: 2cb484c9da47b2f420fddffe7cbfeac950106a848343d147c2b2668d12b71aa3d09297bfe37ec32539a27c6dc7db414414f5ee166d6b2ca0d95f6dfe9dde60d7
+  languageName: node
+  linkType: hard
+
+"pirates@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "pirates@npm:4.0.1"
+  dependencies:
+    node-modules-regexp: ^1.0.0
+  checksum: 21604008c36ab6e14ac458e1a267dd7322cfd36b9e1042e9e277dd064582717e30b9aba8c0a47d738bf004ee7946ed27f6b982d30968534f2c6b5b168a52b555
   languageName: node
   linkType: hard
 
@@ -5864,6 +5967,7 @@ fsevents@~2.1.2:
     "@loopback/rest-explorer": ^3.0.2
     "@loopback/service-proxy": ^3.0.2
     "@loopback/testlab": ^3.2.7
+    "@swc-node/register": ^1.0.0
     "@types/mocha": ^8.0.3
     "@types/node": ^10.17.37
     "@typescript-eslint/eslint-plugin": ^4.5.0
