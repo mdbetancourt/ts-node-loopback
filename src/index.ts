@@ -1,9 +1,11 @@
-import {ApplicationConfig, TsNodeLoopbackApplication} from './application';
+import { ApplicationConfig, TsNodeLoopbackApplication } from './application';
+import { UserExtended } from './models';
 
 export * from './application';
 
 export async function main(options: ApplicationConfig = {}) {
   const app = new TsNodeLoopbackApplication(options);
+  app.model(UserExtended)
   await app.boot();
   await app.start();
 
